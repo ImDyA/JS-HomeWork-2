@@ -42,7 +42,7 @@ switch(calculatorValue){
 alert("The task-3");
 let ageVisiter = Number(prompt("Your age"));
 
-if((ageVisiter > 60) || (ageVisiter < 18)){
+if((ageVisiter > 60 && ageVisiter < 80) || (ageVisiter < 18 && ageVisiter > 12)){
     let parents = confirm("Parents ok?");
     if(parents){
         alert("Взрослые дали согласие проход разрешен");
@@ -51,6 +51,8 @@ if((ageVisiter > 60) || (ageVisiter < 18)){
     }
 }else if((ageVisiter >= 18) && (ageVisiter < 60)){
     alert("Возраст соответсствует требованиям проходите");
+}else if((ageVisiter <= 12) || (ageVisiter >= 80)){
+    alert("Ваш возраст не соответствует трабованиям, проход закрыт!");
 }else{
     alert("Вы ввели неправильные данные");
 }
