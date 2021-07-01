@@ -1,9 +1,9 @@
-let standartFunction = function(){
+const standartFunction = function(){
     let firstNumber = Number(prompt("First number?"));
-    let twoNumber = Number(prompt("Two number?"));
-    let numberSumm = firstNumber + twoNumber;
+    let secondNumber = Number(prompt("Two number?"));
+    let numberSumm = firstNumber + secondNumber;
     // Почему NaN не работает???
-    if((firstNumber == "" || firstNumber == null) || (twoNumber == "" || twoNumber == null) || (numberSumm === NaN)){
+    if((firstNumber == "" || firstNumber == null) || (secondNumber == "" || secondNumber == null) || (numberSumm === NaN)){
         alert("Вы ввели неправильное значение или нажали отмена");
         return;
     }else{
@@ -11,11 +11,11 @@ let standartFunction = function(){
         return;
     }
 }
-let arrowFunction = () => {
+const arrowFunction = () => {
     let firstNumber = Number(prompt("First number?"));
-    let twoNumber = Number(prompt("Two number?"));
-    let numberSumm = firstNumber + twoNumber;
-    if((firstNumber == "" || firstNumber == null) || (twoNumber == "" || twoNumber == null) || (numberSumm === NaN)){
+    let secondNumber = Number(prompt("Two number?"));
+    let numberSumm = firstNumber + secondNumber;
+    if((firstNumber == "" || firstNumber == null) || (secondNumber == "" || secondNumber == null) || (numberSumm === NaN)){
         alert("Вы ввели неправильное значение или нажали отмена");
         return;
     }else{
@@ -24,18 +24,18 @@ let arrowFunction = () => {
     }
 }
 
-let userFunction = () => {
-    let nameUser = prompt("Your name?");
-    let ageUser = Number(prompt("Your age?"));
-    if(ageUser >= 30){
-        alert(`Здраствуйте, ${nameUser}`);
+const greetUser = () => {
+    let userName = prompt("Your name?");
+    let userAge = Number(prompt("Your age?"));
+    if(userAge >= 30){
+        alert(`Здраствуйте, ${userName}`);
     }else{
-        alert(`Привет, ${nameUser}`);
+        alert(`Привет, ${userName}`);
     }
 }
 
 
-let testFunction = function(firstNumber, twoNumber = 2){
+const getPow = function(firstNumber, twoNumber = 2){
     let numberSumm = firstNumber ** twoNumber;
     alert(numberSumm);
 }
