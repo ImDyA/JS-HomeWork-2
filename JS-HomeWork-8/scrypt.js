@@ -91,12 +91,12 @@ const arr2 = [
 //   console.log(obj);
   const chudo = (arr) => {
         let a = arr.reduce(function(acc, cur, a, b) {
-        acc[arr1[a]] = b.filter((a) => a == cur).length
+        acc[arr[a]] = b.filter((a) => a == cur).length
         return acc;
     }, {});
     return a;
   }
-  console.log(chudo(arr1))
+  console.log(chudo(arr2))
 
 // Задание 2 конец урааааа!!!
 
@@ -104,27 +104,21 @@ const arr2 = [
 
 //Задание 3 начало
 
+const oddNumbers = [2, 6, 8, 10, 3];
+const evenNumbers = [3, 5, 1, 9, 6];
 
+const filterNumbers = (num) => {
+    let a = num.filter((a) => a % 2 === 0);
+    let b = num.filter((a) => a % 2 !== 0);
+    if(a.length === 1){
+        console.log(a[0]);
+    }
+    if(b.length === 1){
+        console.log(b[0]);
+    }
+    
+}
+filterNumbers(oddNumbers);
+filterNumbers(evenNumbers);
 
 //Задание 3 конец
-
-
-
-
-
-let p = 9;
-let l = 8;
-let m = 6;
-
-const pol = [2, 6, 8, 10, 3];
-
-const tets = (num) => {
-    for(let i in num){
-        // if(num[i] % 2 != 0){
-        //     console.log('number: ', num[i])
-        // } else {
-        //     continue;
-        // }
-    }
-}
-tets(pol);
